@@ -1,6 +1,11 @@
 package ru.job4j.calculator;
 
 public class Calculator {
+
+    public static void hello(String name, int age) {
+        System.out.println("Hello, " + name + ", age = " + age);
+    }
+
     public static void main(String[] args) {
         int one = 1;
         int two = 2;
@@ -15,5 +20,12 @@ public class Calculator {
         System.out.println(sixDivTwo);
         System.out.println(fiveMinusTwo);
         System.out.println(fourTimeTwo);
+
+        String name = "Job4j";
+        int age = 33;
+        Calculator.hello(name, age);
+        Calculator.hello(name, age);
+        Calculator.hello(name, age);
+        Calculator.hello(name, age);
     }
 }
