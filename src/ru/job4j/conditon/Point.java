@@ -18,6 +18,12 @@ public class Point {
         System.out.println("result (5, 13) to (-11, -33) " + result);
         result = Point.distance(701, -303, 21, 87);
         System.out.println("result (701, -303) to (21, 87) " + result);
+        result = Point.distance(3, 7, 6, 3);
+        System.out.println("result (3, 7) to (6, 3) " + result);
+        result = Point.distance(37, -12, -63, 3);
+        System.out.println("result (37, -12) to (-63, 3) " + result);
+        result = Point.distance(-371, 2, 3, 33);
+        System.out.println("result (-371, 2) to (3, 33) " + result);
     }
 
 }
