@@ -6,10 +6,10 @@ import org.junit.Test;
 public class SqAreaTest {
 
     @Test
-    public void whenP6K2Square2() {
-        double expected = 2;
-        double p = 6;
-        double k = 2;
+    public void whenP71111K413Square1983941() {
+        double expected = 19839.41;
+        double p = 711.11;
+        double k = 4.13;
         double out = SqArea.square(p, k);
         Assert.assertEquals(expected, out, 0.01);
     }
