@@ -4,16 +4,14 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class SqAreaTest {
-
     @Test
-    public void whenP71111K413Square1983941() {
-        double expected = 19839.41;
-        double p = 711.11;
-        double k = 4.13;
+    public void whenP6K2Square2() {
+        int expected = 2;
+        int p = 6;
+        double k = 2;
         double out = SqArea.square(p, k);
         Assert.assertEquals(expected, out, 0.01);
     }
-    //dfdfgdfddf
 
     @Test
     public void whenP31K15Square57() {
@@ -29,6 +27,15 @@ public class SqAreaTest {
         double expected = 9.18;
         double p = 14;
         double k = 3;
+        double out = SqArea.square(p, k);
+        Assert.assertEquals(expected, out, 0.01);
+    }
+
+    @Test
+    public void whenP71111K413Square1983941() {
+        double expected = 19839.41;
+        double p = 711.11;
+        double k = 4.13;
         double out = SqArea.square(p, k);
         Assert.assertEquals(expected, out, 0.01);
     }
