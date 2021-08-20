@@ -1,7 +1,7 @@
 package ru.job4j.conditon;
 
 public class Games {
-    @SuppressWarnings("checkstyle:InnerAssignment")
+
     public static void permission(boolean allowByParent, boolean hasMoney) {
         if (allowByParent && hasMoney) {
             System.out.println("I can go to the cinema.");
