@@ -5,7 +5,6 @@ import org.junit.Test;
 
 public class ChessBoardTest {
 
-
     @Test
     public void whenX1isMinus1ThenWayIs0() {
         int x1 = -1;

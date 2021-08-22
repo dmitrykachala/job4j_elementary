@@ -3,7 +3,6 @@ package ru.job4j.conditon;
 import org.junit.Assert;
 import org.junit.Test;
 
-
 public class DivideBySixTest {
 
     @Test
