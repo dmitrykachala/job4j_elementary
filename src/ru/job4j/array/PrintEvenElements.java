@@ -9,6 +9,7 @@ public class PrintEvenElements {
                         "Текущий элемент массива, начиная с последнего, с чётным индексом: "
                                 + numbers[numbers.length - 1 - i]
                 );
+                break;
             }
         }
     }
