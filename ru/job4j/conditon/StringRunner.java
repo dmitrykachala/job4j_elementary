@@ -1,4 +1,4 @@
-package src.ru.job4j.conditon;
+package ru.job4j.conditon;
 
 public class StringRunner {
     public static void main(String[] args) {
