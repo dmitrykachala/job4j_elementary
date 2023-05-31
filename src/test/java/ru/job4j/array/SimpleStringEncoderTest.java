@@ -1,6 +1,8 @@
 package ru.job4j.array;
-import org.junit.Assert;
-import org.junit.Test;
+
+import org.junit.jupiter.api.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class SimpleStringEncoderTest {
     @Test
@@ -8,7 +10,7 @@ public class SimpleStringEncoderTest {
         String input = "aaabbc";
         String expected = "a3b2c";
         String result = SimpleStringEncoder.encode(input);
-        Assert.assertEquals(result, expected);
+        assertThat(result).isEqualTo(expected);
     }
 
     @Test
@@ -16,7 +18,7 @@ public class SimpleStringEncoderTest {
         String input = "abbccc";
         String expected = "ab2c3";
         String result = SimpleStringEncoder.encode(input);
-        Assert.assertEquals(result, expected);
+        assertThat(result).isEqualTo(expected);
     }
 
     @Test
@@ -24,7 +26,7 @@ public class SimpleStringEncoderTest {
         String input = "aaabcc";
         String expected = "a3bc2";
         String result = SimpleStringEncoder.encode(input);
-        Assert.assertEquals(result, expected);
+        assertThat(result).isEqualTo(expected);
     }
 
     @Test
@@ -32,7 +34,7 @@ public class SimpleStringEncoderTest {
         String input = "abc";
         String expected = "abc";
         String result = SimpleStringEncoder.encode(input);
-        Assert.assertEquals(result, expected);
+        assertThat(result).isEqualTo(expected);
     }
 
     @Test
@@ -40,7 +42,7 @@ public class SimpleStringEncoderTest {
         String input = "aaabbbccc";
         String expected = "a3b3c3";
         String result = SimpleStringEncoder.encode(input);
-        Assert.assertEquals(result, expected);
+        assertThat(result).isEqualTo(expected);
     }
 
     @Test
@@ -48,7 +50,7 @@ public class SimpleStringEncoderTest {
         String input = "aaaaaaaaaaaabbbcdddd";
         String expected = "a12b3cd4";
         String result = SimpleStringEncoder.encode(input);
-        Assert.assertEquals(result, expected);
+        assertThat(result).isEqualTo(expected);
     }
 
     @Test
@@ -56,6 +58,6 @@ public class SimpleStringEncoderTest {
         String input = "aaabbbbaaabbcccddddd";
         String expected = "a3b4a3b2c3d5";
         String result = SimpleStringEncoder.encode(input);
-        Assert.assertEquals(result, expected);
+        assertThat(result).isEqualTo(expected);
     }
 }
